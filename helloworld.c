@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 int main ()
 {
    int liczba1, liczba2, wynik;
@@ -9,7 +10,7 @@ int main ()
        printf("Wpisz druga liczbe: \n");
             scanf("%d", &liczba2);
             getchar();
-       printf("Jaka operacje chcesz wykonac? (podaj znak: +, -, *, /): \n");
+       printf("Jaka operacje chcesz wykonac? (podaj znak: +, -, *, /, ^): \n");
             scanf("%c", &znak);
 
 switch (znak)
@@ -24,6 +25,9 @@ switch (znak)
                    printf("Wynik to: %d\n",wynik);
                    break;
           case   '/': wynik=liczba1/liczba2;
+                   printf("Wynik to: %d\n",wynik);
+                   break;
+          case   '^': wynik=pow(liczba1,liczba2);
                    printf("Wynik to: %d\n",wynik);
                    break;
 }
