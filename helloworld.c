@@ -9,12 +9,15 @@ int main ()
        printf("Wpisz druga liczbe: \n");
             scanf("%d", &liczba2);
             getchar();
-       printf("Jaka operacje chcesz wykonac? (podaj znak - +, -, *, /): \n");
+       printf("Jaka operacje chcesz wykonac? (podaj znak: +, -, *, /): \n");
             scanf("%c", &znak);
 
 switch (znak)
 {
           case   '+': wynik=liczba1+liczba2;
+                   printf("Wynik to: %d\n",wynik);
+                   break;
+          case   '-': wynik=liczba1-liczba2;
                    printf("Wynik to: %d\n",wynik);
                    break;
 
