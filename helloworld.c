@@ -20,6 +20,9 @@ switch (znak)
           case   '-': wynik=liczba1-liczba2;
                    printf("Wynik to: %d\n",wynik);
                    break;
+          case   '*': wynik=liczba1*liczba2;
+                   printf("Wynik to: %d\n",wynik);
+                   break;
 
 }
 return 0;
